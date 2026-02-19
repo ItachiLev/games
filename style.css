@@ -12,6 +12,18 @@ body {background-color: #1b1c1f;}
     justify-content: center;
 }
 
+.logo {
+    animation-name: rotation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite
+}
+.logo:hover {animation-play-state: paused}
+
+@keyframes rotation {
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+
 .hero-title {
     font-size: 64px;
     line-height: 1.2;
@@ -79,6 +91,8 @@ body {background-color: #1b1c1f;}
 }
 .dota-img:hover {background-color: #fcb8ff}
 
+.footer-link:nth-child(2){margin: 0 24px}
+
 @media (max-width: 1400px) {
     .hero-title {font-size: 48px;}
     .hero-desk {font-size: 20px;}
@@ -104,4 +118,6 @@ body {background-color: #1b1c1f;}
 
     .fort-img{margin: 0}
     .hero-title{font-size: 38px;}
+    .footer-content{flex-direction: column}
+    .footer-link:nth-child(2){margin: 0}
 }
