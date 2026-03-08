@@ -56,6 +56,14 @@ body {background-color: #1b1c1f;}
 
 .gta_img:hover {background-color: #8d46f6}
 
+.gta-box {
+    height: calc(100vh - 112px);
+    background-image: url(./img/pic/gta-big.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain
+}
+
 .fort-img {
     flex: 1;
     height: 330px;
@@ -70,6 +78,14 @@ body {background-color: #1b1c1f;}
 }
 
 .fort-img:hover {background-color: #71e66e}
+
+.fort-box {
+    height: calc(100vh - 112px);
+    background-image: url(./img/pic/fortnite-big.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain
+}
 
 .dota-img {
     width:100%;
@@ -86,26 +102,57 @@ body {background-color: #1b1c1f;}
     object-fit: contain;
     width: 100%;
     height: 100%;
-    object-position: center;
+    object-position: center
 
 }
 .dota-img:hover {background-color: #fcb8ff}
 
+.dota-box {
+    height: calc(100vh - 112px);
+    background-image: url(./img/pic/dota-big.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain
+}
+
+.gallery, .articles{background-color: #f1efe4}
+
 .footer-link:nth-child(2){margin: 0 24px}
+.swiper{width: 80%;   height: 100%}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff, transparent;
+    display: flex;
+    align-items: center
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+
 
 @media (max-width: 1400px) {
-    .hero-title {font-size: 48px;}
-    .hero-desk {font-size: 20px;}
+    .hero-title {font-size: 48px}
+    .hero-desk {font-size: 20px}
 }
 
 @media (max-width: 991px) {
     .menu-bg {background-color: #323335}
-
     .menu-btn {background-color: #fff}
-
     .nav-link:nth-child(2){margin: 0 !important}
-
     .btn-purple{display: block}
+    .img-mobile img {width: 450px}
+    .img-mobile {display: flex;   justify-content: flex-end}
+
+    .gta-box, .dota-box, .fort-box{
+        height: 100%;
+        background-image: none
+    }
 }
 
 @media (max-width: 420px) {
@@ -116,6 +163,7 @@ body {background-color: #1b1c1f;}
         margin-bottom: 24px;
     }
 
+    .img-mobile img {width: 350px}
     .fort-img{margin: 0}
     .hero-title{font-size: 38px;}
     .footer-content{flex-direction: column}
